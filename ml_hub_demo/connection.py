@@ -33,12 +33,38 @@ class Session(requests.Session):
 
     @classmethod
     def from_environment(cls):
+        """Gets the session instance by looking for a MLHUB_API_TOKEN environment variable for the API token.
+
+        Returns
+        -------
+        session : Session
+
+        Raises
+        ------
+        EnvironmentError
+            If no MLHUB_API_TOKEN environment variable is found.
+        """
         if MLHUB_ENV_VARIABLE not in os.environ:
             raise EnvironmentError(f'Could not find {MLHUB_ENV_VARIABLE} in environment variables.')
         return cls(api_token=os.environ['MLHUB_API_TOKEN'])
 
     @classmethod
     def from_config(cls):
+        """
+        Gets the session instance by looking for a .ml-hub TOML file in either the current working directory or the user's home directory
+        and getting the API token from the ``auth.api_token`` value in this file.
+
+        Returns
+        -------
+        session : Session
+
+        Raises
+        ------
+        FileNotFoundError
+            If no config file could be found in either the current working directory or the user home directory.
+        ValueError
+            If no ``auth.api_token`` property is found in the TOML config file.
+        """
         config_path = os.path.join(os.getcwd(), MLHUB_CONFIG_FILE)
         if not os.path.exists(config_path):
             os.path.join(pathlib.Path.home(), MLHUB_CONFIG_FILE)
@@ -49,11 +75,29 @@ class Session(requests.Session):
         with open(config_path, 'r', encoding='utf-8') as src:
             config = toml.load(src)
 
-        return cls(api_token=config.get('auth', {}).get('api_token'))
+        api_token = config.get('auth', {}).get('api_token')
+        if not api_token:
+            raise ValueError(f'No auth.api_token property found in {config_path}.')
+        return cls(api_token=api_token)
 
 
 @lru_cache(maxsize=None)
 def get_session(api_token: str = None) -> requests.Session:
+    """
+    Get a class:`requests.Session` instance that uses Bearer token authentication to make requests. If an ``api_token`` argument is given, this
+    will be used as the API Token when authenticating with ML Hub. If this value is ``None``, then it will first try to fetch the token from a
+    MLHUB_API_TOKEN environment variable. If this environment variable is not found, it will try to find a ``.ml-hub`` TOML config file (first in the
+    current working directory and then in the user home directory) and will use any ``auth.api_token`` value found there as the API token.
+
+    Parameters
+    ----------
+    api_token : str, optional
+        An API token to use when creating the session. If not provided, will attempt to get the API token from the environment or a .ml-hub config file.
+
+    Returns
+    -------
+    session : Session
+    """
     if api_token:
         return Session(api_token=api_token)
     try:
@@ -81,7 +125,8 @@ def get(path, *, api_token: str = None, **kwargs) -> dict:
     dict : response
         The JSON response as a dictionary.
 
-    Raises:
+    Raises
+    ------
     requests.exceptions.HTTPError
         If an API error is encountered.
     """
@@ -108,8 +153,13 @@ def paginate(link: str, items_property: str = 'features') -> Iterator[Any]:
 
     Yields
     -------
-    Any : item
+    item : Any
         Individual items as found in the ``items_property`` list.
+
+    Raises
+    ------
+    ValueError
+        If not list of items can be parsed from the response.
     """
     while True:
         # Fetch the response and parse the list of items

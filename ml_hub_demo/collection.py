@@ -20,7 +20,7 @@ class Collection(satstac.Collection):
 
         Returns
         -------
-        Collection
+        collection : Collection
         """
         return cls(data=get(f'{cls.path}/{collection_id}'))
 
@@ -45,7 +45,7 @@ class Collection(satstac.Collection):
 
         Yields
         -------
-        satstac.Item
+        item : satstac.Item
         """
         items_link = next((link for link in self.links(rel='items')), None)
         if not items_link:

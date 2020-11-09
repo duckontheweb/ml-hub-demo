@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "ml-hub-demo"
-version = "0.1.0"
-description = ""
-authors = ["Jon Duckworth <bigduck@gmail.com>"]
+version = "0.0.1"
+description = "Example Python SDK for interacting with Radiant Earth's [ML Hub API](http://docs.mlhub.earth/#radiant-mlhub-api)."
+authors = ["Jon Duckworth <duckontheweb@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -12,7 +12,26 @@ toml = "^0.10.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+Sphinx = "^3.3.0"
+bump2version = "^1.0.1"
+tox = "^3.20.1"
+flakehell = "^0.7.0"
+sphinx-rtd-theme = "^0.5.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.tox]
+legacy_tox_ini = """
+[testenv:build-docs]
+changedir = {toxinidir}/docs
+allowlist_externals = make
+deps =
+	Sphinx~=3.2.1
+	sphinx-rtd-theme~=0.5.0
+	recommonmark~=0.6.0
+commands =
+	make html
+
+"""
