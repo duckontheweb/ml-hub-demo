@@ -1,0 +1,842 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.0
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.radiant.earth/mlhub/v1/collections
+  response:
+    body:
+      string: "{\n    \"collections\": [\n        {\n            \"description\":
+        \"Microsoft Chesapeake NLCD\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            -80.81605,\n
+        \                           36.558805,\n                            -74.245552,\n
+        \                           44.002759\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2013-01-01T00:00:00Z\",\n
+        \                           \"2014-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"microsoft_chesapeake_nlcd\",\n            \"license\": \"CDLA-permissive-1.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_nlcd\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_nlcd/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"sci:citation\": \"Robinson C, Hou L, Malkin K, Soobitsky R,
+        Czawlytko J, Dilkina B, Jojic N. Large Scale High-Resolution Land Cover Mapping
+        with Multi-Resolution Data. Proceedings of the 2019 Conference on Computer
+        Vision and Pattern Recognition (CVPR 2019).\"\n        },\n        {\n            \"description\":
+        \"African Crops Uganda\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            33.5466817,\n
+        \                           1.4271017,\n                            35.00013415,\n
+        \                           3.7269467\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2018-01-01T00:00:00Z\",\n
+        \                           \"2018-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"ref_african_crops_uganda_01\",\n            \"license\": \"CC-BY-SA-4.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_uganda_01\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_uganda_01/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"licensor\",\n
+        \                       \"host\",\n                        \"processor\"\n
+        \                   ],\n                    \"url\": \"https://radiant.earth\"\n
+        \               }\n            ],\n            \"sci:citation\": \"Bocquet,
+        C., Dalberg Data Insights. (2019) Dalberg Data Insights Uganda Crop Classification,
+        Version 1. [Indicate subset used]. Radiant ML Hub. [Date Accessed]\"\n        },\n
+        \       {\n            \"description\": \"No Description\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           34.02206853162399,\n                            0.167021869556755,\n
+        \                           34.38442998089197,\n                            0.716046625152611\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2019-01-01T00:00:00Z\",\n
+        \                           \"2019-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"ref_african_crops_kenya_02_source\",\n            \"license\": \"CC-BY-SA-4.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_02_source\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_02_source/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"licensor\",\n
+        \                       \"host\",\n                        \"processor\"\n
+        \                   ],\n                    \"url\": \"https://radiant.earth\"\n
+        \               }\n            ],\n            \"sci:citation\": \"Radiant
+        Earth Foundation (2020) CV4A Competition Kenya Crop Type Dataset, Version
+        1. [Indicate subset used]. Radiant ML Hub. [Date Accessed]\"\n        },\n
+        \       {\n            \"description\": \"Microsoft Chesapeake Landsat 8 Leaf-On
+        Composite\",\n            \"extent\": {\n                \"spatial\": {\n
+        \                   \"bbox\": [\n                        [\n                            -80.81605,\n
+        \                           36.558805,\n                            -74.245552,\n
+        \                           44.002759\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2013-01-01T00:00:00Z\",\n
+        \                           \"2017-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"microsoft_chesapeake_landsat_leaf_on\",\n            \"license\": \"See
+        https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_landsat_leaf_on\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_landsat_leaf_on/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"sci:citation\": \"Robinson C, Hou L, Malkin K, Soobitsky R,
+        Czawlytko J, Dilkina B, Jojic N. Large Scale High-Resolution Land Cover Mapping
+        with Multi-Resolution Data. Proceedings of the 2019 Conference on Computer
+        Vision and Pattern Recognition (CVPR 2019).\"\n        },\n        {\n            \"description\":
+        \"SpaceNet 1 Rio Chipped Training Dataset\",\n            \"extent\": {\n
+        \               \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           -43.7753747662,\n                            -23.0106794336,\n
+        \                           -43.4847465904,\n                            -22.8256549561\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2016-02-29T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn_AOI_1_RIO\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn_AOI_1_RIO\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn_AOI_1_RIO/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIs70E4TjNvTsC3KKdhoAbzzcZrXZ9cCKw5THZDz3ZlJDmAxz7wx9mi3cyGCgmajpUs8bSOSC9UG7zh0rb562XS5G3G3p0KClQuP7JuPXaspYCASRo6vO87P4CghHP32va9HKRKtcpE_oNyBv1UO2pOm92_EBXLWXAwM1THgOqT4f9Y0040wFr7ZU2hWN7vBtVXGWm5OUvJv_JfSh7mkCuxQ==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqI7k2Ezx0S4BP_SVDitlIplybVVhSsuvTQ78vW0XDnXSn6_gK1ztTbkPToxwbTNl1kGmc2W41mbpk8X2OAi2bCyQx3H5iCWx2zBsL1pOX1STMzLe_JW28j1QG5PnSsqMNQAyuUyCr7TmIB-mpn7fj4BsNTevcSRVR0gZsiXhOoJkxkXSUPYArh6BYuutvtjxt9BaYEgi-7XZf8Y-UJ3dGlBQ==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 3 Shanghai Chipped Training Dataset\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           121.5901692,\n                            31.1961159001,\n
+        \                           121.7516292,\n                            31.4277759\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2015-06-06T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn3_AOI_4_Shanghai\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_4_Shanghai\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_4_Shanghai/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIyvpoontpmO4Bj2XCFlpa_Re6Jyx2pVy-I7_rxYk8w1yJUzyNqfjDlNkStdtxkHiec83mtowFYzO9iAsehKSvt5SaN3qOAiDkzcSzQWeFq8lYP6r3xwpv3AJeoQOu1y8dg3LBkuHfHaOLPizH5r-s8XlmUAnYqsg5G-4TwxB5VWYV-Zf2tmCTyH9fzSuGGXWOGK-_FRVkocPwDW5PQAtl2A==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIwcZWYaUmITGPfMp_zxiJOSysRG49YiBnBRVoi5QUjuRhK3d2bHXdKF-KBWMhbd-BEilnmBDCpJU7ov5JGZbw862SxIbuDLrEbWrihhVjtiTlb4AuCcfzDG4xJsBXrQtiG1xFHTTOAhGUFv7ee4qvT3W5lcPOARz20SemZlh_rJxYhe_qQ0g9TQHpBb59IVrMyZg_6cIaX8n3v_H3YrW9iw==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 3 Khartoum Chipped Training Dataset\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           32.48583840001186,\n                            15.51381119993631,\n
+        \                           32.566568400026206,\n                            15.74196119997686\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2015-04-13T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn3_AOI_5_Khartoum\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_5_Khartoum\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_5_Khartoum/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIoujNvnjib4tihXrl6Q7hyOXqrM1tAfazuNqMbF6Iy1lh2jnBplf2d8DKuUZMgbGjT-Qv3GuDg9v5WGeCaW1GlgppOxmiMRtXnJIyEgwJ2IkP7qDfVT_kqyy8m90OV7BB-CzRU3-vZnTX5iqDfiVb_35We-Awk1xQFdMsx2Yf2H4iSjBWdRyNQBEEdISDvZz5R0dFxoifYugc0JJyVlsO_g==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIt0CJWJb5E7CGCEqDASZyROaJuP8UMa_Q_RaWnOkisHNIbYMwCsUVH48izlsgNvCG0sNeDwVPdQ6bEg_vcR-jS096TfnNEtmMqCmiMEqrP9Z0GY-P5yD1r7Jjpqnzu-iO5xZkq56zf01RIHulXYCxmHAsn_kHIdW5yG7uWai7_N0edI8xUDN47Ds3mUDGJEZdozjixsq9JWH-I5S9ZHx-gA==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 5 Moscow Chipped Training Dataset\",\n            \"extent\": {\n
+        \               \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           37.62123533463809,\n                            55.60938704097397,\n
+        \                           37.78303540799408,\n                            55.746917105720065\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2016-02-29T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn5_AOI_7_Moscow\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn5_AOI_7_Moscow\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn5_AOI_7_Moscow/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqI7uuCMASQI9AqPmJ_kkvOeUhp0iYnZ30hfqsZBCC9SSr3Sng0X6TV8C1wi_0y1hSbNDZYIowoQ8vYjl4nMlhOyuZwQqB4kLJhNNw7TsLzsZs11H_hwgPDOTxisYWiz--6x4UqhNUgrEk8IsGxuEvOt0ctsQ0CtUNXwJdTxg8AuGjr73WoUjxXy0KWbiLz2RAcBgmpPbtQ8J0oHBcB1hHWbg==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIT3oPblnqtYmaJxDMTOBkc3UxOf28YswJXjxw8OZYOSqbtCUuUL2LEgvwuXIkx-zyVbS-l_eNFGSKKOvJu6JItw69cMEXWXub9UV-zNYoWrafvthOq7WLQAK-aRUtPdXcMyMtlwJm65gI-weYCOAygwdP8y7EWkUeYIymHDklsZ2nvLp894g4UJ7QQN3qR-eBXI9wrNr6Eivaqz49r-kN2g==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 5 Mumbai Chipped Training Dataset\",\n            \"extent\": {\n
+        \               \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           72.7844259905958,\n                            18.885500500608433,\n
+        \                           72.89403328656945,\n                            19.0645257518164\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2016-02-29T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn5_AOI_8_Mumbai\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn5_AOI_8_Mumbai\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn5_AOI_8_Mumbai/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIWKX0vMatGvuEgYt_yrcQJt1GpcYPiItkweg-Kjda-lIr7pL-tfpsrjI-bZ8kDiNIrmjOOTw4bwF8aN_JkHJCPhvZ_qpvAObdZXkxwc4_R_JhxOWVjBy2YedoyC1JE_zu8ZZ_HrG2LuO6Z2J0fBPhjfiV7ZkcHAv4E9ZDbx6B7C515zTmKlb9wCxxW5ExxlIgN74U8ltZmy3EalOcJ7T7ng==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIV8o-iGs5XleByIKqD7KMTaQhA0ERgUs62DvIJz-eNo-tVDe2XBPNBvwrQTZqxqjleHAfaElP1haUtVH3PuS5mqcdM2C_g2OF8HqJkM7JQHvcXLbyiYXgJq-XE4CvctcUKyqtQk3TFttmpSmBRR7XprNtFjzZhK6Mz4Y0I1C4LRgijp43CL6gWCc_vfEPZ8jifdvj3kGdYSLGxW4XwjSfUA==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"BigEarthNet v1.0\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            -9.00023345437725,\n
+        \                           1.7542686833884724,\n                            83.44558248555553,\n
+        \                           68.02168200047284\n                        ]\n
+        \                   ]\n                },\n                \"temporal\": {\n
+        \                   \"interval\": [\n                        [\n                            \"2017-06-13T10:10:31Z\",\n
+        \                           \"2018-05-29T11:54:01Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"bigearthnet_v1_labels\",\n            \"license\": \"CDLA-Permissive-1.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/bigearthnet_v1_labels\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/bigearthnet_v1_labels/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"BigEarthNet\",\n                    \"roles\": [\n                        \"processor\",\n
+        \                       \"licensor\"\n                    ],\n                    \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIJcu2CYpC4ywQ_Cc8FTnlh0iXkFX6vVzW0VzNDrUuWGcqHgLKJoTjQdIQimDQfk_F1sLB1oOiIeh6UX-wbWi-5SPtwGELwhoK5LzwDzdXY-q_DJZrpJ6V1f_F5wcpQGaAd9D3vM_e1pqlKNsfI96bYo4Wo2FYNNO2lctnw201bnUQPfJl8oPtzLV-Uo4TOzNv\"\n
+        \               }\n            ],\n            \"sci:citation\": \"G. Sumbul,
+        M. Charfuelan, B. Demir, V. Markl, \\\"BigEarthNet: A Large-Scale Benchmark
+        Archive for Remote Sensing Image Understanding\\\", IEEE International Geoscience
+        and Remote Sensing Symposium, pp. 5901-5904, Yokohama, Japan, 2019.\",\n            \"stac_extensions\":
+        [\n                \"label\",\n                \"sci\"\n            ]\n        },\n
+        \       {\n            \"description\": \"African Crops Tanzania\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           33.568404763042174,\n                            -4.437431373678635,\n
+        \                           37.212412649437695,\n                            -2.043629432957623\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2017-01-01T00:00:00Z\",\n
+        \                           \"2017-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"ref_african_crops_tanzania_01\",\n            \"license\": \"CC-BY-SA-4.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_tanzania_01\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_tanzania_01/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"licensor\",\n
+        \                       \"host\",\n                        \"processor\"\n
+        \                   ],\n                    \"url\": \"https://radiant.earth\"\n
+        \               }\n            ],\n            \"sci:citation\": \"Great African
+        Food Company. (2019) Great African Food Company Tanzania Ground Reference
+        Crop Type Dataset, Version 1. [Indicate subset used]. Radiant ML Hub. [Date
+        Accessed]\"\n        },\n        {\n            \"description\": \"BigEarthNet
+        v1.0\",\n            \"extent\": {\n                \"spatial\": {\n                    \"bbox\":
+        [\n                        [\n                            -9.00023345437725,\n
+        \                           1.7542686833884724,\n                            83.44558248555553,\n
+        \                           68.02168200047284\n                        ]\n
+        \                   ]\n                },\n                \"temporal\": {\n
+        \                   \"interval\": [\n                        [\n                            \"2017-06-13T10:10:31Z\",\n
+        \                           \"2018-05-29T11:54:01Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"bigearthnet_v1_source\",\n            \"license\": \"CDLA-Permissive-1.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/bigearthnet_v1_source\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/bigearthnet_v1_source/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"BigEarthNet\",\n                    \"roles\": [\n                        \"processor\",\n
+        \                       \"licensor\"\n                    ],\n                    \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIAb1IlaHWOwKAO0DKlFaP3cWAQJn1GI4xBR5Zb9VryQgGA25hUt0aluU-a9Afqi_b724oPNYsVib1d1wErYL7em8Mi5cjE5NHI8qZ-X5_YbdhX6qG6VFa8g4jIB_K9fBG8CJNSYZg07jAHwk3RhmGl5wOPPsJTV3WFEVF6EI7uHG7KGrRnnXC7Rig_sWX9rGb\"\n
+        \               }\n            ],\n            \"sci:citation\": \"G. Sumbul,
+        M. Charfuelan, B. Demir, V. Markl, \\\"BigEarthNet: A Large-Scale Benchmark
+        Archive for Remote Sensing Image Understanding\\\", IEEE International Geoscience
+        and Remote Sensing Symposium, pp. 5901-5904, Yokohama, Japan, 2019.\",\n            \"stac_extensions\":
+        [\n                \"eo\",\n                \"sci\"\n            ]\n        },\n
+        \       {\n            \"description\": \"SpaceNet 3 Paris Chipped Training
+        Dataset\",\n            \"extent\": {\n                \"spatial\": {\n                    \"bbox\":
+        [\n                        [\n                            2.18816639997,\n
+        \                           48.9757509,\n                            2.30048639992,\n
+        \                           49.0599909\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2016-02-29T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn3_AOI_3_Paris\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_3_Paris\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_3_Paris/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIbEzAm0hPd3Kjpi0Htt_ak5-CH5I_nuzjltxxOYy89tuPv3p9f58KihB_p7zcYg6NLwBu6k2kXKo8hhTM2WsxXqAgjfsKveiw3DA6CN3UKmpOYDrrZ4FBA4MwX7jP1uSEVuRwomNDx_uJYn4f-JwGgDKvQmp5XCx8qmAVTIPY3q9Quazy0SdC6qJutdqsAhOwe824PySEQ6r_8dSrxuzHOQ==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIc_ObOY-rIYYVS4I8nnaNiALPEkGDl9ED737NBq91Tb0JXMBK_MS03K7vP7QL0AyxBv1m0kA8GKuIii4rljo6OyMpO_obOEDx83FXnvKF50UFNSLJcd3RJaOz7U56Fuh3NdY2dt3B_Rla-E0xgMKQJGMfruIhXZSndkKCQQoXeHFaGs9Tn2pb24xpOStUZajB6OQJl7123lq1WfruRmVMyQ==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 2 Shanghai Chipped Training Dataset\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           121.5901692,\n                            31.1978709001,\n
+        \                           121.7498742,\n                            31.4277759\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2015-06-06T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn2_AOI_4_Shanghai\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_4_Shanghai\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_4_Shanghai/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqI2XbsJcMPY7l-6SHXq3g7UYB7eMGmZ16NUC2PP599hsIcgKMA2VlpqJA7qey2q3Xv7hCAJD0QmGOPJuokZGY5MmuBCKN--8PD8Bdm4nCnI0A0B0LrbV7ZbJbxM2GGkYWAif_8RFy3Kl71ss_Rdzt-kI6aATRNbBMh8hNZ0MuIp95sSzm0JCEWK1pEvqwAXm3BXYbNn3Xwa7R45g6dmnTFGQ==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIAUCjmJ5xqbcs_QGUMtrKLym1Pxsd7sNlo7ThOJR0VEuKm56askj62LKV4nG74loosKlHaFsnSzkvEGk6DlPp4i9qU1deah3s-ystXc-aLSMrqdFVHGGE-5UZP4IRCIHFJI36rx1kOGfvkqV5K4iJcekPkcLrL4eKwng_CV9XOPegE-lyaDQwJe5xe47wuJI3Bq7uhUO9WuUqWVAVmBw87A==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"LandCoverNet Source Imagery\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        -15.937860500150009,\n
+        \                       -31.68783755999348,\n                        46.87392100826879,\n
+        \                       31.339825523515234\n                    ]\n                },\n
+        \               \"temporal\": {\n                    \"interval\": [\n                        [\n
+        \                           \"2018-01-01T00:00:00Z\",\n                            \"2018-12-31T00:00:00Z\"\n
+        \                       ]\n                    ]\n                }\n            },\n
+        \           \"id\": \"ref_landcovernet_v1_source\",\n            \"license\":
+        \"CC-BY-4.0\",\n            \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_landcovernet_v1_source\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_landcovernet_v1_source/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"processor\",\n
+        \                       \"licensor\"\n                    ],\n                    \"url\":
+        \"https://radiant.earth\"\n                }\n            ],\n            \"sci:citation\":
+        \"Alemohammad S.H., Ballantyne A., Bromberg Gaber Y., Booth K., Nakanuku-Diggs
+        L., & Miglarese A.H. (2020) \\\"LandCoverNet: A Global Land Cover Classification
+        Training Dataset\\\", Version 1.0, Radiant MLHub. [Date Accessed] https://doi.org/10.34911/rdnt.d2ce8i\",\n
+        \           \"sci:doi\": \"10.34911/rdnt.d2ce8i\",\n            \"stac_extensions\":
+        [\n                \"eo\",\n                \"sci\"\n            ]\n        },\n
+        \       {\n            \"description\": \"LandCoverNet Labels\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        -15.937860500150009,\n
+        \                       -31.68783755999348,\n                        46.87392100826879,\n
+        \                       31.339825523515234\n                    ]\n                },\n
+        \               \"temporal\": {\n                    \"interval\": [\n                        [\n
+        \                           \"2018-01-01T00:00:00Z\",\n                            \"2018-12-31T00:00:00Z\"\n
+        \                       ]\n                    ]\n                }\n            },\n
+        \           \"id\": \"ref_landcovernet_v1_labels\",\n            \"license\":
+        \"CC-BY-4.0\",\n            \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_landcovernet_v1_labels\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_landcovernet_v1_labels/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"processor\",\n
+        \                       \"licensor\"\n                    ],\n                    \"url\":
+        \"https://radiant.earth\"\n                }\n            ],\n            \"sci:citation\":
+        \"Alemohammad S.H., Ballantyne A., Bromberg Gaber Y., Booth K., Nakanuku-Diggs
+        L., & Miglarese A.H. (2020) \\\"LandCoverNet: A Global Land Cover Classification
+        Training Dataset\\\", Version 1.0, Radiant MLHub. [Date Accessed] https://doi.org/10.34911/rdnt.d2ce8i\",\n
+        \           \"sci:doi\": \"10.34911/rdnt.d2ce8i\",\n            \"stac_extensions\":
+        [\n                \"label\",\n                \"sci\"\n            ]\n        },\n
+        \       {\n            \"description\": \"SpaceNet 4 Atlanta Chipped Training
+        Dataset\",\n            \"extent\": {\n                \"spatial\": {\n                    \"bbox\":
+        [\n                        [\n                            590111.9563080214,\n
+        \                           5745470.427302527,\n                            596702.0547804891,\n
+        \                           5753195.130788647\n                        ]\n
+        \                   ]\n                },\n                \"temporal\": {\n
+        \                   \"interval\": [\n                        [\n                            \"2019-08-04T00:00:00Z\",\n
+        \                           \"2019-08-23T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"sn6_AOI_11_Rotterdam\",\n            \"license\": \"CC-BY-SA-4.0\",\n            \"links\":
+        [\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn6_AOI_11_Rotterdam\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn6_AOI_11_Rotterdam/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIBbjOsUXK6GMobXWhDTsfLuPTvY90CVLhan-Sc2uT4rUpLYIHTFjsfgzibEhNAXvQ-sx5D-zGc8WKIM4wBi8uGth8DDKNTvm0IQt-T_nZsRN6tFgBxy0A5qc0qGvbgpDcyKoujn1-Bn487mrP7Sn1o_k2ajdSfW4UIjaVHsw9YEeMvzheFNiKu9q0SUb5z2P0lq1DROcz7MYjLWyMVIqskg==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIRgY3TcCeyFRXfClPuQ-GAv6JOkRAjNcgt40GaRGNDgX24APjTwsgaVjxj2qXyiVIDo87__AO4NNc-GWLX-BbNcyJzMv9OXW1VB2kPp1bQDrA974CcRG19itMBsKp9UiiFv8HAQpuyPcDk22j69uwky4mhi-9HKVpIxQL_ACtlURW7gVvfb7gAIer2u1aFOJtFSKyfJk0blTYwC6EGYWDiw==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 2 Khartoum Chipped Training Dataset\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           32.4858384,\n                            15.5138111999,\n
+        \                           32.5665684,\n                            15.7402062\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2015-04-13T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn2_AOI_5_Khartoum\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_5_Khartoum\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_5_Khartoum/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqI-_xOvvYPBh0zTVxaNTkQyq-4lBkGx-8iuNv9nL0JKx-anTiA_ZLi8RF-UfK-Q0g7MEUX6riBnLZDqmbo6uT9x_4fDxqqaGBmERux-2WU1K_6IDFT9y_u2i2xJVU9mOfTXdA31ifb0V-H2vuXEEdnQHLo7jZ6d0h62dkL0VYbJsZ0n93wMvA0M6GtDbsUYJyb2LXiDv_JwyTz9cZAMYBOeA==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIDeCTE2jHIQGJqZQxULHRT3KLxGsgrtqbTG0JY3JjRudgRuU5iJ80jGXICTx1VTSBCrIn4mjfPkFlnykpixtODNYMqmKSNZbPPT_LSABdJgga22sQY_ymBpYA3UvaXVTWzIGlCIqQzYHG_iVELRF64oSekPikm47mE1yBsOqZCva6fAiAn5cQ2dwW9u-ySW0sq3H8GmF3Hi4sHW95QStSRA==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 2 Vegas Chipped Training Dataset\",\n            \"extent\": {\n
+        \               \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           -115.3075176,\n                            36.1212776997,\n
+        \                           -115.1513226,\n                            36.2616777\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2015-10-22T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn2_AOI_2_Vegas\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_2_Vegas\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_2_Vegas/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIbrkLwe5-J5AQQy96BpmRdWvRZNLizML6ZjTLhdCCQCjwFDHMZ6zjy0g7a15tsLtue7G8pjqDkFHT63DWcut_bYdkdk7HeOQHktJLE2s3saASpNM0lL_y4CS8kLc55dOPT3zeX_6FQH7ZrG1_uKfoEW8zu7pKqX8p75lY4mZw0SmjvTV_zvehODCyqsCc2QhSjCRchRCMivXzhI00wn0zcw==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIDDJi10Ma88em0utZ0eMedRw1LajYu7_gRjC8OpWJDOZ0vNeJkQJtEe4atYPN-so2z7f5gdmHneCzsZvPZq6QjC7C0NbvkDsX8v77jX6e-Fmgju4kG_OuGksgx6CDqTGqRvgnz13k6YJLV0exRwel1quo_rgvKb5TVmXnQDnX2nBAKKjfNb4xpHhw8JeHkzdAFjRC0KuUpdjf44Thv1dIfA==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 3 Vegas Chipped Training Dataset\",\n            \"extent\": {\n
+        \               \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           null,\n                            null,\n                            null,\n
+        \                           null\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2015-10-22T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn3_AOI_2_Vegas\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_2_Vegas\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn3_AOI_2_Vegas/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIAkPmH7cs9STP0IdlWg0jvP55zA3xdx2lfVCOC6XTqIpbSJ12lcGAImVEZanrRn_1aDuptUf9RrRLpmeGyxqbcwujIyzDF7JEYUCbyz8UcTm5ItGlX-_MIAq7Uoaj9k49d5O7o3hc2WxQVC7TMkh0f5xt_--6RjUzBmJZ_56XqCXb_f-ozZSsl2B7SaViWkhimfEddijAgz50IWT-EN1E1A==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIGoIe8iWNOLg-4NYPpfjKTYIFHfMROucpolTASS4mzJP52tk_VD0oOCoj9Br2S8Jmaag8bE92fvc6H_Ij3-jHMUpRcPkDA4wwCWPY4TR0TAumQk-5uOpD9jt_byA-f7lrihJdlAy_bMu8b_3R-7abDyw88juxlukqDIMbUloVIzWmr7vgG4GjUoSR-7rqJNXcrBrPi5Sy2lt18U9cUbL1gw==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"No Description\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            34.02206853162399,\n
+        \                           0.167021869556755,\n                            34.38442998089197,\n
+        \                           0.716046625152611\n                        ]\n
+        \                   ]\n                },\n                \"temporal\": {\n
+        \                   \"interval\": [\n                        [\n                            \"2019-01-01T00:00:00Z\",\n
+        \                           \"2019-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"ref_african_crops_kenya_02_labels\",\n            \"license\": \"CC-BY-SA-4.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_02_labels\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_02_labels/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"licensor\",\n
+        \                       \"host\",\n                        \"processor\"\n
+        \                   ],\n                    \"url\": \"https://radiant.earth\"\n
+        \               }\n            ],\n            \"sci:citation\": \"Radiant
+        Earth Foundation (2020) CV4A Competition Kenya Crop Type Dataset, Version
+        1. [Indicate subset used]. Radiant ML Hub. [Date Accessed]\"\n        },\n
+        \       {\n            \"description\": \"Microsoft Chesapeake Landsat 8 Leaf-Off
+        Composite\",\n            \"extent\": {\n                \"spatial\": {\n
+        \                   \"bbox\": [\n                        [\n                            -80.81605,\n
+        \                           36.558805,\n                            -74.245552,\n
+        \                           44.002759\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2013-01-01T00:00:00Z\",\n
+        \                           \"2017-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"microsoft_chesapeake_landsat_leaf_off\",\n            \"license\": \"See
+        https://landsat.usgs.gov/sites/default/files/documents/Landsat_Data_Policy.pdf\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_landsat_leaf_off\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_landsat_leaf_off/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"sci:citation\": \"Robinson C, Hou L, Malkin K, Soobitsky R,
+        Czawlytko J, Dilkina B, Jojic N. Large Scale High-Resolution Land Cover Mapping
+        with Multi-Resolution Data. Proceedings of the 2019 Conference on Computer
+        Vision and Pattern Recognition (CVPR 2019).\"\n        },\n        {\n            \"description\":
+        \"Microsoft Chesapeake NAIP Imagery\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            -80.81605,\n
+        \                           36.558805,\n                            -74.245552,\n
+        \                           44.002759\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2011-01-01T00:00:00Z\",\n
+        \                           \"2014-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"microsoft_chesapeake_naip\",\n            \"license\": \"public domain with
+        attribution\",\n            \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_naip\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_naip/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"sci:citation\": \"Robinson C, Hou L, Malkin K, Soobitsky R,
+        Czawlytko J, Dilkina B, Jojic N. Large Scale High-Resolution Land Cover Mapping
+        with Multi-Resolution Data. Proceedings of the 2019 Conference on Computer
+        Vision and Pattern Recognition (CVPR 2019).\"\n        },\n        {\n            \"description\":
+        \"African Crops Source Imagery\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            33.5466817,\n
+        \                           -4.437431373678635,\n                            37.212412649437695,\n
+        \                           3.7269467\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2017-01-01T00:00:00Z\",\n
+        \                           \"2019-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"ref_african_crops_imagery_01\",\n            \"license\": \"CC-BY-SA-4.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_imagery_01\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_imagery_01/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"licensor\",\n
+        \                       \"host\",\n                        \"processor\"\n
+        \                   ],\n                    \"url\": \"https://radiant.earth\"\n
+        \               }\n            ]\n        },\n        {\n            \"description\":
+        \"SAR-Enhanced Mapping of Live Fuel Moisture Content\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        -123.5313889,\n
+        \                       28.3,\n                        -93.82277778,\n                        48.41361111\n
+        \                   ]\n                },\n                \"temporal\": {\n
+        \                   \"interval\": [\n                        [\n                            \"2015-06-30T00:00:00Z\",\n
+        \                           \"2019-01-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"su_sar_moisture_content\",\n            \"license\": \"CC BY-NC-ND 4.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/su_sar_moisture_content\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/su_sar_moisture_content/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Stanford University\",\n                    \"roles\": [\n                        \"licensor\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIG5dw8bgAXK-SH88EjvZH43rxNShNobANw0s8EdooyT5pkqm7zbSRYZhdWVurGjwtCVr1gFUF54f2-IUSlMsmuxvu87H-_A8xFVrbUP_cqvR2xLseDqpAK00H8XcnnmUQIOnNSkNUF-XIvt4kA57dqTTDQnYIPZF14oVdhHaCey2_JS7FArdNFv0bFSvxsIkLOEv7l4UYn1uu_pYkw491aQ==\"\n
+        \               },\n                {\n                    \"name\": \"Radiant
+        Earth Foundation\",\n                    \"roles\": [\n                        \"processor\",\n
+        \                       \"host\"\n                    ],\n                    \"url\":
+        \"https://radiant.earth\"\n                }\n            ],\n            \"sci:citation\":
+        \"Rao, K., Williams, A.P., Fortin, J. & Konings, A.G. (2020). SAR-enhanced
+        mapping of live fuel moisture content. Remote Sens. Environ., 245.\",\n            \"sci:doi\":
+        \"10.1016/j.rse.2020.111797\",\n            \"stac_extensions\": [\n                \"label\",\n
+        \               \"sci\"\n            ]\n        },\n        {\n            \"description\":
+        \"Microsoft Chesapeake Landcover\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            -80.81605,\n
+        \                           36.558805,\n                            -74.245552,\n
+        \                           44.002759\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2013-01-01T00:00:00Z\",\n
+        \                           \"2014-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"microsoft_chesapeake_lc\",\n            \"license\": \"CDLA-permissive-1.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_lc\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_lc/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"sci:citation\": \"Robinson C, Hou L, Malkin K, Soobitsky R,
+        Czawlytko J, Dilkina B, Jojic N. Large Scale High-Resolution Land Cover Mapping
+        with Multi-Resolution Data. Proceedings of the 2019 Conference on Computer
+        Vision and Pattern Recognition (CVPR 2019).\"\n        },\n        {\n            \"description\":
+        \"Microsoft Chesapeake Buildings\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            -80.81605,\n
+        \                           36.558805,\n                            -74.245552,\n
+        \                           44.002759\n                        ]\n                    ]\n
+        \               },\n                \"temporal\": {\n                    \"interval\":
+        [\n                        [\n                            \"2013-01-01T00:00:00Z\",\n
+        \                           \"2014-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"microsoft_chesapeake_buildings\",\n            \"license\": \"CDLA-permissive-1.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_buildings\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/microsoft_chesapeake_buildings/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"sci:citation\": \"Robinson C, Hou L, Malkin K, Soobitsky R,
+        Czawlytko J, Dilkina B, Jojic N. Large Scale High-Resolution Land Cover Mapping
+        with Multi-Resolution Data. Proceedings of the 2019 Conference on Computer
+        Vision and Pattern Recognition (CVPR 2019).\"\n        },\n        {\n            \"description\":
+        \"SpaceNet 4 Atlanta Chipped Training Dataset\",\n            \"extent\":
+        {\n                \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           732701,\n                            3720189,\n
+        \                           748901,\n                            3744039\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2016-02-29T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn4_AOI_6_Atlanta\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn4_AOI_6_Atlanta\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn4_AOI_6_Atlanta/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqINmlZOmYTkyZ0qrWb30rWCc_HcEZxVOMY06D-_dZ17AgVRRTiCUSDl_VjnlweBPD7bYpggGEFMA6ieC_n35czbm2p3PokxMbgVZ5V8rvMMtJrr_jb6MYs67zBqS9yWKVqwSt9WdLUBHMDwX3h7ASuLnYh-pUZAr65OqpahU_JGHcJ4SrW1yKj20QQ9O__sqhqVm-w7qOgKG4bFtVwT_vPcA==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIdyKfZJB1T0Beg5WWKVSxBD5MegqbexYIC-t-yhfuoljb2DevYCtO7FFfMQ28-sfl0ZWqszEQpIcBCkefcKl3oZKBp9f_JPvRKupadFvKgIdLXdyDx0HK8F8R-B3dXSIO6K_YWwOBabL7FM4eTDkiS9jNKOPSEDgzyBSwB_zhRxBlPt38ovAA0HfkB3G5mQ26eTx8fIRJjLBBKxWLTab05w==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 1 Rio Chipped Training Dataset\",\n            \"extent\": {\n
+        \               \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           -43.7753747662,\n                            -23.0106794336,\n
+        \                           -43.4847465904,\n                            -22.8256549561\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2016-02-29T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn1_AOI_1_RIO\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn1_AOI_1_RIO\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn1_AOI_1_RIO/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqI8zEAz_qwkyHc0gpEmdmUKDVyoIgXIiwNOzEHPYq7tccLf26tPAE4NPJB0obm2ovl6FbCMbGJrgbzYEfKWBVYGVXu_I6tUr5bAtNRhq1W9qjvMkF3Eo8pGcjcwtml5ahWkcAGIwVXkAQ6CUPRMTNj2vpczU_zk9CP9zjfMN4xWusqY8WOktm31dDcF-_q0KY-maBIXLXahaJDcSMKeKqAmA==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIceX80agdCvvj7UrBPORqHx1D_zbhOYXpEzYJiIoPA5E-v26ECTE-wAJEQJyZZGIvYMjThypxTSiOO_2U3wBZ1nb8HzaO8aLp7MCzSVZMKj2rLp_L6UA5AOWnDZNNF3UJv3TwGCpd4F7PPl1QT-N_Hm6pogxdgq3jyx9KNePsce4HP_NusIyVddikT-v2xKRrRkS9OMLWBR0NOoQrW3QcoA==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"SpaceNet 2 Paris Chipped Training Dataset\",\n            \"extent\": {\n
+        \               \"spatial\": {\n                    \"bbox\": [\n                        [\n
+        \                           2.18641139997,\n                            48.9757509,\n
+        \                           2.30048639992,\n                            49.0582359\n
+        \                       ]\n                    ]\n                },\n                \"temporal\":
+        {\n                    \"interval\": [\n                        [\n                            \"2016-02-29T00:00:00Z\",\n
+        \                           null\n                        ]\n                    ]\n
+        \               }\n            },\n            \"id\": \"sn2_AOI_3_Paris\",\n
+        \           \"license\": \"CC-BY-SA-4.0\",\n            \"links\": [\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_3_Paris\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/sn2_AOI_3_Paris/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"properties\": {\n                \"license\": \"CC-BY-SA-4.0\",\n
+        \               \"providers\": [\n                    {\n                        \"name\":
+        \"SpaceNet LLC\",\n                        \"roles\": [\n                            \"processor\",\n
+        \                           \"host\",\n                            \"licensor\",\n
+        \                           \"producer\"\n                        ],\n                        \"url\":
+        \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqIHNqdE45wHcL2_LqdpLm9hE7TbnV8lQuDRprhColbjJX-8LNU5-SfpcfTADu_WSOtrdTx49r17G1piwwEmxp5NkiUocIusKrQBapc4huNElaHTBvI4BQpkh0BU_FL_vFntP16QcdJv6-am6eLGyE7VnRAXDGqpIr52kQuaL3_p7wleBboiY3SKwcolzMMvKJ6dawOUWBVENBj2IyKwWL4eg==\"\n
+        \                   }\n                ]\n            },\n            \"providers\":
+        [\n                {\n                    \"name\": \"SpaceNet LLC\",\n                    \"roles\":
+        [\n                        \"processor\",\n                        \"host\",\n
+        \                       \"licensor\",\n                        \"producer\"\n
+        \                   ],\n                    \"url\": \"https://api.radiant.earth/mlhub/v1/download/gAAAAABfrtqImE9Xxdmqmwo3B3yNMkAnDDpxpBjIKTjzHmDsEsbTMB1PigJlG2R8Fs423155ytkBgTY_S4Ji4iehPbeWDV8pyHyDMA0T-bls3Onfmr_JijkLGbZ2gz8djuymuO-muOsWt0RKNQbetK_gMPZTlVbSMM8skIfnpXbsvLzf18rbJojEofbC_F4wbXEPR8BPBVHELfwAl6LH6Mo_gbyWfOPODg==\"\n
+        \               }\n            ],\n            \"stac_extensions\": [\n                \"label\"\n
+        \           ],\n            \"version\": 1\n        },\n        {\n            \"description\":
+        \"African Crops Kenya\",\n            \"extent\": {\n                \"spatial\":
+        {\n                    \"bbox\": [\n                        [\n                            34.18191992149459,\n
+        \                           0.472418155845121,\n                            34.3714943155646,\n
+        \                           0.714421720685111\n                        ]\n
+        \                   ]\n                },\n                \"temporal\": {\n
+        \                   \"interval\": [\n                        [\n                            \"2019-01-01T00:00:00Z\",\n
+        \                           \"2019-12-31T00:00:00Z\"\n                        ]\n
+        \                   ]\n                }\n            },\n            \"id\":
+        \"ref_african_crops_kenya_01\",\n            \"license\": \"CC-BY-SA-4.0\",\n
+        \           \"links\": [\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_01\",\n
+        \                   \"rel\": \"self\"\n                },\n                {\n
+        \                   \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\":
+        \"parent\"\n                },\n                {\n                    \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n                    \"rel\": \"root\"\n
+        \               },\n                {\n                    \"href\": \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_01/items\",\n
+        \                   \"rel\": \"items\"\n                }\n            ],\n
+        \           \"providers\": [\n                {\n                    \"name\":
+        \"Radiant Earth Foundation\",\n                    \"roles\": [\n                        \"licensor\",\n
+        \                       \"host\",\n                        \"processor\"\n
+        \                   ],\n                    \"url\": \"https://radiant.earth\"\n
+        \               }\n            ],\n            \"sci:citation\": \"PlantVillage.
+        (2019) PlantVillage Kenya Ground Reference Crop Type Dataset, Version 1. [Indicate
+        subset used]. Radiant ML Hub. [Date Accessed]\"\n        }\n    ]\n}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '74408'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Fri, 13 Nov 2020 19:12:08 GMT
+      Server:
+      - gunicorn/20.0.4
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -31,6 +31,7 @@ bump2version = "^1.0.1"
 tox = "^3.20.1"
 flakehell = "^0.7.0"
 sphinx-rtd-theme = "^0.5.0"
+vcrpy = "^4.1.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -40,6 +41,14 @@ build-backend = "poetry.core.masonry.api"
 legacy_tox_ini = """
 [tox]
 isolated_build = True
+envlist = py36, py37, py38
+
+[testenv]
+whitelist_externals = poetry
+commands =
+    poetry install -q
+    poetry run pytest
+
 [testenv:build-docs]
 changedir = {toxinidir}/docs
 allowlist_externals = make

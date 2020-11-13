@@ -1,0 +1,51 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.0
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_uganda_01
+  response:
+    body:
+      string: "{\n    \"description\": \"African Crops Uganda\",\n    \"extent\":
+        {\n        \"spatial\": {\n            \"bbox\": [\n                [\n                    33.5466817,\n
+        \                   1.4271017,\n                    35.00013415,\n                    3.7269467\n
+        \               ]\n            ]\n        },\n        \"temporal\": {\n            \"interval\":
+        [\n                [\n                    \"2018-01-01T00:00:00Z\",\n                    \"2018-12-31T00:00:00Z\"\n
+        \               ]\n            ]\n        }\n    },\n    \"id\": \"ref_african_crops_uganda_01\",\n
+        \   \"license\": \"CC-BY-SA-4.0\",\n    \"links\": [\n        {\n            \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_uganda_01\",\n
+        \           \"rel\": \"self\"\n        },\n        {\n            \"href\":
+        \"https://api.radiant.earth/mlhub/v1/\",\n            \"rel\": \"parent\"\n
+        \       },\n        {\n            \"href\": \"https://api.radiant.earth/mlhub/v1/\",\n
+        \           \"rel\": \"root\"\n        },\n        {\n            \"href\":
+        \"https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_uganda_01/items\",\n
+        \           \"rel\": \"items\"\n        }\n    ],\n    \"providers\": [\n
+        \       {\n            \"name\": \"Radiant Earth Foundation\",\n            \"roles\":
+        [\n                \"licensor\",\n                \"host\",\n                \"processor\"\n
+        \           ],\n            \"url\": \"https://radiant.earth\"\n        }\n
+        \   ],\n    \"sci:citation\": \"Bocquet, C., Dalberg Data Insights. (2019)
+        Dalberg Data Insights Uganda Crop Classification, Version 1. [Indicate subset
+        used]. Radiant ML Hub. [Date Accessed]\"\n}"
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1535'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Fri, 13 Nov 2020 19:19:20 GMT
+      Server:
+      - gunicorn/20.0.4
+    status:
+      code: 200
+      message: OK
+version: 1
