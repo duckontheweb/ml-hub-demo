@@ -186,6 +186,14 @@
 <dd class="field-odd"><p><a class="reference internal" href="#ml_hub_demo.collection.Collection" title="ml_hub_demo.collection.Collection">Collection</a></p>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ml_hub_demo.collection</span> <span class="kn">import</span> <span class="n">Collection</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">collection_id</span> <span class="o">=</span> <span class="s1">&#39;ref_african_crops_uganda_01&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">collection</span> <span class="o">=</span> <span class="n">Collection</span><span class="o">.</span><span class="n">from_mlhub</span><span class="p">(</span><span class="n">collection_id</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">collection</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+<span class="go">African Crops Uganda</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -200,11 +208,25 @@
 <dd class="field-even"><p><strong>item</strong> (<em>satstac.Item</em>)</p>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ml_hub_demo.collection</span> <span class="kn">import</span> <span class="n">Collection</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">collection</span> <span class="o">=</span> <span class="n">Collection</span><span class="o">.</span><span class="n">from_mlhub</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">first_item</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">collection</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">first_item</span><span class="o">.</span><span class="n">properties</span><span class="p">)</span>
+<span class="go">{&#39;datetime&#39;: &#39;2018-12-31T00:00:00Z&#39;,</span>
+<span class="go"> &#39;label:description&#39;: &#39;Uganda Tile 016 Labels&#39;,</span>
+<span class="go"> &#39;label:methods&#39;: [&#39;manual&#39;],</span>
+<span class="go"> &#39;label:properties&#39;: None,</span>
+<span class="go"> &#39;label:tasks&#39;: [&#39;classification&#39;],</span>
+<span class="go"> &#39;label:type&#39;: &#39;vector&#39;}</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="ml_hub_demo.collection.Collection.list">
-<em class="property">classmethod </em><code class="sig-name descname">list</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a><span class="p">]</span><a class="headerlink" href="#ml_hub_demo.collection.Collection.list" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="sig-name descname">list</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span><a class="reference internal" href="#ml_hub_demo.collection.Collection" title="ml_hub_demo.collection.Collection">ml_hub_demo.collection.Collection</a><span class="p">]</span><a class="headerlink" href="#ml_hub_demo.collection.Collection.list" title="Permalink to this definition">¶</a></dt>
 <dd><p>List all collections.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -214,6 +236,15 @@
 <dd class="field-even"><p>List[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a>]</p>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ml_hub_demo.collection</span> <span class="kn">import</span> <span class="n">Collection</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">collections</span> <span class="o">=</span> <span class="n">Collection</span><span class="o">.</span><span class="n">list</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="go">microsoft_chesapeake_nlcd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="go">&lt;class &#39;ml_hub_demo.collection.Collection&#39;&gt;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py attribute">

@@ -38,6 +38,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.tox]
 legacy_tox_ini = """
+[tox]
+isolated_build = True
 [testenv:build-docs]
 changedir = {toxinidir}/docs
 allowlist_externals = make
@@ -47,5 +49,4 @@ deps =
 	recommonmark~=0.6.0
 commands =
 	make html
-
 """
