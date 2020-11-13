@@ -7,6 +7,13 @@ Example Python SDK for interacting with Radiant Earth's [ML Hub API](http://docs
 
 This project uses [`poetry`](https://python-poetry.org/) for managing virtual environments and packaging.
 
+### From Source Distribution
+
+```console
+pip install https://github.com/duckontheweb/ml-hub-demo/releases/download/0.0.1/ml-hub-demo-0.0.1.tar.gz
+```
+
+### From Repo
 1. Clone the repo:
    ```console
    $ git clone git@github.com:duckontheweb/ml-hub-demo.git
