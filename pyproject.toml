@@ -3,9 +3,23 @@ name = "ml-hub-demo"
 version = "0.0.1"
 description = "Example Python SDK for interacting with Radiant Earth's [ML Hub API](http://docs.mlhub.earth/#radiant-mlhub-api)."
 authors = ["Jon Duckworth <duckontheweb@gmail.com>"]
+maintainers = ["Jon Duckworth <duckontheweb@gmail.com>"]
+repository = "https://github.com/duckontheweb/ml-hub-demo"
+documentation = "https://duckontheweb.github.io/ml-hub-demo"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8"
+]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
 sat-stac = "^0.4.0"
 requests = "^2.24.0"
 toml = "^0.10.2"

@@ -171,7 +171,7 @@ def paginate(link: str, items_property: str = 'features') -> Iterator[Any]:
         else:
             raise ValueError(f'Could not parse list of items from response of type {type(r)}')
 
-        yield iter(items)
+        yield from iter(items)
 
         # Find a "next" link, if it exists, otherwise break
         link = next((link_ for link_ in r['links'] if link_['rel'] == 'next'), {'href': None})['href']
